@@ -10,53 +10,139 @@
   <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+
+function googleTranslateElementInit() {
+
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'ml,en'
+    },
+    'google_translate_element'
+  );
+
+}
+
+</script>
+
+<script
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+
 <body>
 
   <!-- TOP BAR -->
   <div class="top-bar">
-    <div class="top-left">
+
+    <div class="top-left" data-key="govText">
       Government of Kerala | Forest & Wildlife Department
     </div>
 
     <div class="top-right">
-      <a href="#">English</a>
-      <a href="#">മലയാളം</a>
+
+      <div class="language-switcher notranslate">
+
+        <a href="#" id="englishBtn" class="notranslate">
+          English
+        </a>
+
+        <a href="#" id="malayalamBtn" class="notranslate">
+          മലയാളം
+        </a>
+
+      </div>
+
       <a href="pages/login.html">
-   <button class="login-btn">
-      Department Login
-   </button>
-</a>
+        <button class="login-btn">
+          Department Login
+        </button>
+      </a>
+
     </div>
+
   </div>
+
+
 
   <!-- NAVBAR -->
   <header class="navbar">
 
     <div class="logo-section">
+
       <img src="images/Logo_of_Kerala_Forest_Department.png" alt="logo">
 
       <div>
-        <h2>Kerala Forest Department</h2>
-        <p>Chalakudy Division Forest Office</p>
+
+        <h2 data-key="deptTitle">
+          Kerala Forest Department
+        </h2>
+
+        <p data-key="deptSubTitle">
+          Chalakudy Division Forest Office
+        </p>
+
       </div>
+
     </div>
 
+
+
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Divisions</a>
-      <a href="#">Our Work</a>
-      <a href="#">Public Engagement</a>
-      <a href="#">Media</a>
-      <a href="#">Contact</a>
+
+      <a href="#" data-key="navHome">
+        Home
+      </a>
+
+      <a href="#" data-key="navAbout">
+        About
+      </a>
+
+      <a href="#" data-key="navDivision">
+        Divisions
+      </a>
+
+      <a href="#" data-key="navWork">
+        Our Work
+      </a>
+
+      <a href="#" data-key="navPublic">
+        Public Engagement
+      </a>
+
+      <a href="#" data-key="navMedia">
+        Media
+      </a>
+
+      <a href="#" data-key="navContact">
+        Contact
+      </a>
+
     </nav>
 
   </header>
 
+
+
   <!-- HERO SECTION -->
-  <section class="hero">
+    <section class="hero">
+
+    <!-- SLIDES -->
+  <div class="slide active" style="background-image: url('images/home_img1.jpeg');"></div>
+
+  <div class="slide" style="background-image: url('images/home_img2.jpeg');"></div>
+
+  <div class="slide" style="background-image: url('images/home_img3.jpeg');"></div>
+
+  <div class="slide" style="background-image: url('images/home_img4.jpeg');"></div>
+
+  <div class="slide" style="background-image: url('images/home_img5.jpeg');"></div>
 
     <div class="overlay"></div>
 
@@ -77,7 +163,15 @@
       </div>
     </div>
 
+
+    <!-- BUTTONS -->
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+
+
   </section>
+
+
 
   <!-- QUICK CARDS -->
   <section class="quick-cards">
@@ -114,49 +208,57 @@
 
   </section>
 
+
+
   <!-- ABOUT SECTION -->
   <section class="about">
 
     <div class="about-left">
-      <h2>About Chalakudy Division</h2>
+
+      <h2>
+        About Chalakudy Division
+      </h2>
 
       <p>
         Chalakudy Division is one of the major forest divisions in Kerala,
         known for evergreen forests, rich wildlife and biodiversity.
       </p>
 
-      <button class="green-btn">Know More</button>
+      <button class="green-btn">
+        Know More
+      </button>
 
       <div class="stats">
 
         <div>
-          <h3>3</h3>
+          <h3>5</h3>
           <p>Ranges</p>
         </div>
 
         <div>
-          <h3>15</h3>
-          <p>Sections</p>
+          <h3>3</h3>
+          <p>Stations</p>   
         </div>
 
         <div>
-          <h3>248</h3>
-          <p>Beat Offices</p>
+          <h3>120+</h3>
+          <p>Ofiicers</p>
         </div>
 
-        <div>
-          <h3>1850+</h3>
-          <p>Staff</p>
-        </div>
 
       </div>
+
     </div>
 
+
+
     <div class="about-right">
-      <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=1200&auto=format&fit=crop" alt="">
+      <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?q=80&w=1200&auto=format&fit=crop" alt="Monkey">
     </div>
 
   </section>
+
+
 
   <!-- FOREST SECTION -->
   <section class="forest-section">
@@ -191,11 +293,16 @@
 
   </section>
 
+
+
   <!-- EMERGENCY -->
   <section class="emergency">
 
     <div class="emergency-text">
-      <h2>Emergency & Helpline</h2>
+
+      <h2>
+        Emergency & Helpline
+      </h2>
 
       <p>
         Report forest fires, wildlife emergencies
@@ -205,9 +312,12 @@
       <h1>0480 270 0000</h1>
 
       <span>(24x7 Control Room)</span>
+
     </div>
 
   </section>
+
+
 
   <!-- FOOTER -->
   <footer>
@@ -243,7 +353,7 @@
 
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
